@@ -290,6 +290,23 @@ template {
     font-style: normal
 }
 
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns with equal width */
+    gap: 20px;
+    justify-items: center;
+    margin-top: 2;
+}
+
+.image-grid img {
+    width: 110px;
+    height: 85px;
+}
+
+.lower-image {
+    transform: translateY(30px); /* Adjust the value to move it lower or higher */
+}
+
 .fa {
     display: inline-block;
     font: 14px/1 FontAwesome;
@@ -4770,6 +4787,21 @@ template {
     color: #68b604
 }
 
+.user-content {
+    display: flex;
+    align-items: center;
+}
+  
+.user-image {
+flex: 1;
+margin-right: 80px; /* Adjust the margin as needed */
+}
+
+.user-text {
+flex: 3;
+text-align: justify;
+}
+
 article,
 aside,
 figcaption,
@@ -4983,7 +5015,8 @@ a img {
 }
 
 .tech {
-    margin: 10px
+    margin: 10px;
+    margin-bottom: 0%;
 }
 
 .user {
