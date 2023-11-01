@@ -150,7 +150,7 @@
           </picture>
         </div>
         <div class="contents" style="text-align: center">
-          <h3>Deep Probabilistic Movement Primitives</h3>
+          <h3 style="margin-bottom: 15px;">Deep Probabilistic Movement Primitives</h3>
           <div>
             <img
               height="50"
@@ -167,9 +167,9 @@
             <img height="25" width="25" src="https://unpkg.com/simple-icons@3.4.0/icons/github.svg" />
           </div>
           <p style="text-align: justify">
-            I developed and designed a website using ReactJS and Bootstrap, hosted on Github Pages, to showcase my web
-            presence, story, work experience, education, projects, and achievements in an interactive and
-            visually-appealing format.
+            In our project, we introduced a deep movement primitive architecture that encodes all the operations found in linear alternatives, with the added benefit of 
+            a Bayesian context aggregator for improved context conditioning and blending. To evaluate our model, we conducted performance comparisons with existing baselines
+             in the literature, using two commonly used robotic arms, the WAM and KINOVA arms. 
           </p>
           <a class="project-link" target="_blank" href="https://arxiv.org/abs/2307.05141">Check it out!</a>
         </div>
@@ -216,11 +216,11 @@
       <div class="user-projects">
         <div class="images-left">
           <picture>
-            <img alt="registration" src="./assets/img/jpg/registration.gif" />
+            <img alt="registration" src="./assets/img/jpg/registration.gif" style="margin-top: 50px;"/>
           </picture>
         </div>
         <div class="contents-right" style="text-align: center">
-          <h3>Simulating Robot-Assisted Surgery; Robot to Camera Coordinate Registration</h3>
+          <h3 style="margin-bottom: 15px;">Simulating Robot-Assisted Surgery; Robot to Camera Coordinate Registration</h3>
           <div>
             <img
               height="50"
@@ -248,24 +248,25 @@
             &nbsp;
             <img height="25" width="25" src="https://unpkg.com/simple-icons@3.4.0/icons/github.svg" />
           </div>
-              <p style="text-align: justify"></p>
-                I created a web application for tracking the spread of COVID-19. Using Johns Hopkins University Center For
-                Systems Science and Engineering API, the website processes the COVID-19 data to create statistical
-                projections through graphs and charts.
+              <p style="text-align: justify">
+                This project focuses on the critical integration of medical imaging and robotic arm control in robot-assisted Minimally Invasive Surgery (MIS).
+                 Within this semi-autonomous system, surgeons specify surgical procedures with precise needle insertion coordinates. The workflow includes
+                  calibration to align the imaging and robotic systems, translating surgeon commands to the robot's coordinates, and executing precise needle
+                   positioning on a disassembled human model mannequin. We use the WAM arm for simulation in MoveIt and real-world implementation. 
               </p>
               <a class="project-link" target="_blank" href="https://github.com/fahaghverd/Simulating-Robot-Assisted-Surgery"> Check it out!</a>
-        </div>
+          </div>
       </div>
 
       <!-- User Project #2:Uncalibrated Visual Servoing (UVS) -->
       <div class="user-projects">
         <div class="images-right">
           <picture>
-            <img alt="uvs" src="./assets/img/jpg/uvs.gif" />
+            <img alt="uvs" src="./assets/img/jpg/uvs.gif" style="margin-top: 70px;"/>
           </picture>
         </div>
         <div class="contents" style="text-align: center">
-          <h3>Uncalibrated Visual Servoing (UVS)</h3>
+          <h3 style="margin-bottom: 15px;">Uncalibrated Visual Servoing (UVS)</h3>
           <div>
             &nbsp;
             <img
@@ -282,46 +283,77 @@
             <img height="25" width="25" src="https://unpkg.com/simple-icons@3.4.0/icons/github.svg" />
           </div>
           <p style="text-align: justify">
-            I created a two-player online dice-based board game with a theme loosely set around Dungeons & Dragons. It
-            was developed as a submission for Penn Apps XXI, using ReactJS and CSS Grid Layouts for design and hosted on
-            GitHub Pages.
+            In our project, we addressed Uncalibrated Visual Servoing (UVS) with a focus on both 2D and 3D tracking. For 2D tracking, we used the Lucas-Kanade tracker,
+             and for 3D tracking, we employed MTF-based trackers. We also developed controllers for position and velocity to ensure precise robotic control. To optimize
+              robot motion planning, we utilized curved splines with Bezier curves for smooth and accurate trajectory planning.
           </p>
           <a class="project-link" target="_blank" href="https://github.com/AVS1508/Summer-2020-Project"
             >Check it out!</a>
         </div>
       </div>
+
+       <!-- User Project #3: Learning Inverse Dynamic Model for 7-DoF WAM arm -->
+       <div class="user-projects">
+        <div class="images-left">
+          <picture>
+            <img alt="Personal Website" src="./assets/img/jpg/wamID.gif" width="60%" height="50%" style="margin-left: 120px;"/>
+            
+          </picture>
+        </div>
+        <div class="contents-right" style="text-align: center">
+          <h3 style="margin-bottom: 15px;">Learning Inverse Dynamic Model for 7-DoF WAM arm </h3>
+          <div>
+            <img
+            height="25"
+            width="25"
+            src= "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg"
+          />
+            &nbsp;
+            <img
+              height="50"
+              width="50"
+              src= "./assets/img/svg/ros.svg"
+            />
+            &nbsp;
+            <img
+              height="25"
+              width="25"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+            />
+            &nbsp;
+            <img height="25" width="25" src="https://unpkg.com/simple-icons@3.4.0/icons/github.svg" />
+          </div>
+          <p style="text-align: justify">
+            Model-based control systems are among most efficient and reliable robotic control systems. However, extracting manipulator’s dynamic modelling is challenging. 
+            Here, a one-layer MLP neural network is used to model the lumped function H, which allows for estimation of joint torques based on current
+            joint states. To create a dataset for learning inverse dynamics, I used Python scripts with ROS to generate normally distributed trajectories with position
+             and velocity as inputs and torque as the output. This dataset was then used to train the MLP neural network for estimating joint torque based on the robot's configuration, implementing inverse dynamics.               
+          </p>
+          <a class="project-link" target="_blank" href="https://github.com/fahaghverd/System-Identification-WAM-">Check it out!</a>
+        </div>
+      </div>
+
       <!-- Use Project #4: Cyclic Stretch and Flexure Bioreactor -->
       <div class="user-projects">
-        <div class="images-left">
+        <div class="images-right">
           <picture>
             <img alt="Cyclic Stretch and Flexure Bioreactor" src="./assets/img/jpg/bioreactor.gif" />
           </picture>
         </div>
-        <div class="contents-right" style="text-align: center">
-          <h3>Cyclic Stretch and Flexure Bioreactor</h3>
+        <div class="contents" style="text-align: center">
+          <h3 style="margin-bottom: 15px;">Cyclic Stretch and Flexure Bioreactor</h3>
           <div>
             <img
               height="26"
               width="26"
-              src="https://unpkg.com/simple-icons@3.4.0/icons/arduino.svg"
-              style="filter: invert(22%) sepia(77%) saturate(1486%) hue-rotate(183deg) brightness(101%) contrast(103%)"
+              src="./assets/img/svg/arduino.svg"
             />
             &nbsp;
             <img
               height="26"
               width="26"
-              src="https://unpkg.com/simple-icons@3.4.0/icons/labview.svg"
-              style="filter: invert(33%) sepia(29%) saturate(3844%) hue-rotate(184deg) brightness(90%) contrast(84%)"
-            />
-            &nbsp;
-            <img
-              height="26"
-              width="26"
-              src="https://unpkg.com/simple-icons@3.4.0/icons.mjs/inventor.svg"
-              style="filter: invert(33%) sepia(29%) saturate(3844%) hue-rotate(184deg) brightness(90%) contrast(84%)"
-            />
-            
-
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/labview/labview-original.svg"
+            />          
           </div>
           <p style="text-align: justify">
             I led a team in designing and building a Cyclic Stretch and Flexure Bioreactor. 
@@ -333,45 +365,7 @@
           </a>
         </div>
       </div>
-      <!-- User Project #3: Learning Inverse Dynamic Model for 7-DoF WAM arm -->
-      <div class="user-projects">
-        <div class="images-right">
-          <picture>
-            <img alt="Personal Website" src="./assets/img/jpg/wamID.gif" width="50%" height="40%" style="margin-right: 120px;"/>
-            
-          </picture>
-        </div>
-        <div class="contents" style="text-align: center">
-          <h3>Learning Inverse Dynamic Model for 7-DoF WAM arm </h3>
-          <div>
-            <img
-              height="32"
-              width="32"
-              src="https://unpkg.com/simple-icons@3.4.0/icons/react.svg"
-              style="filter: invert(73%) sepia(74%) saturate(1552%) hue-rotate(169deg) brightness(109%) contrast(97%)"
-            />
-            &nbsp;
-            <img
-              height="32"
-              width="32"
-              src="https://unpkg.com/simple-icons@3.4.0/icons/bootstrap.svg"
-              style="filter: invert(24%) sepia(14%) saturate(2270%) hue-rotate(222deg) brightness(102%) contrast(90%)"
-            />
-            &nbsp;
-            <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/github.svg" />
-          </div>
-          <p style="text-align: justify">
-            I developed and designed a website using ReactJS and Bootstrap, hosted on Github Pages, to showcase my web
-            presence, story, work experience, education, projects, and achievements in an interactive and
-            visually-appealing format.
-          </p>
-          <a class="project-link" target="_blank" href="https://www.adityavsingh.com/">Check it out!</a>
-        </div>
-      </div>
-
-
-
-      
+          
     
     </section>
 
